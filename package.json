@@ -1,36 +1,45 @@
 {
-  "name": "quick-pg",
-  "version": "0.0.1",
-  "description": "📦 A key value postgres database",
-  "main": "build/pg.js",
-  "scripts": {
-    "test": "jest",
-    "format": "prettier --write **/*.{js,ts,jsx,tsx,html,json}",
-    "build":"rimraf build && tsc",
-     "build:docs":"jsdoc2md build/pg.js"
-  },
-  "keywords": ["postgres", "quickpostgres", "keyv", "quick.db", "postgressql", "sql", "orm"],
-  "author": "adoniswoah",
-  "license": "MIT",
-  "dependencies": {
-    "@types/pg": "^8.6.1",
-    "pg": "^8.7.1"
-  },
-  "devDependencies": {
-    "@types/jest": "^27.0.2",
-    "jest": "^27.3.1",
-    "ts-jest": "^27.0.7",
-    "typescript": "^4.4.4"
-  },
-  "jest": {
-    "transform": {
-      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ]
-  }
+	"name": "quick-pg",
+	"version": "0.0.1",
+	"description": "📦 A key value postgres database",
+	"main": "build/pg.js",
+	"scripts": {
+		"test": "jest",
+		"format": "prettier --write **/*.{js,ts,jsx,tsx,html,json}",
+		"build": "rimraf build && tsc",
+		"build:docs": "jsdoc2md build/pg.js"
+	},
+	"keywords": [
+		"postgres",
+		"quickpostgres",
+		"keyv",
+		"quick.db",
+		"postgressql",
+		"sql",
+		"orm"
+	],
+	"author": "adoniswoah",
+	"license": "MIT",
+	"dependencies": {
+		"@types/pg": "^8.6.1",
+		"dotenv": "^10.0.0",
+		"pg": "^8.7.1"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.0.2",
+		"jest": "^27.3.1",
+		"ts-jest": "^27.0.7",
+		"typescript": "^4.4.4"
+	},
+	"jest": {
+		"transform": {
+			".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+		},
+		"testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js"
+		]
+	}
 }

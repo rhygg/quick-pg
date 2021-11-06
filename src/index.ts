@@ -1,12 +1,6 @@
-import {
-    QuickPg
-} from './pg';
+import { QuickPg } from "./pg";
 
-import {
-    QPOptions
-} from './QPOptions';
+import { QPOptions } from "./QPOptions";
 
 export default QuickPg;
-export {
-    QPOptions
-}
+export { QPOptions };
